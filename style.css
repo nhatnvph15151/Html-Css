@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-padding-top: 50px;
-    
+
 }
+
 body {
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
@@ -16,13 +18,24 @@ header {
     width: 100%;
     height: auto;
     z-index: 11;
+    
+}
+
+
+
+header .logo a{
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 20px;
+    text-decoration: none;
+    
 }
 
 header .container {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    width:100%;
+    width: 100%;
     top: 0;
     height: auto;
     display: flex;
@@ -31,8 +44,14 @@ header .container {
     color: white;
     align-items: center;
     z-index: 10;
-    background-color: #1dc8cd; 
+    transition: 1s;
 }
+header.stick .container  {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: white;
+    transition: all 0.5s;
+}
+
 
 header .container .menu ul {
     padding: 30px 12px;
@@ -44,9 +63,17 @@ header .container .menu ul {
 header .container .menu ul li {
     padding: 0px 20px;
 }
-header .container .menu ul li a{
+
+header .container .menu ul li a {
     text-decoration: none;
+    color: rgb(249, 238, 238);
 }
+header .container .menu ul li a:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+    transition: all  0.3s;
+}
+
 section .container {
     width: 100%;
     height: 100vh;
@@ -57,6 +84,7 @@ section .container {
     z-index: 2;
     overflow: hidden;
 }
+
 .over::before {
     content: "";
     display: block;
@@ -67,9 +95,10 @@ section .container {
     opacity: 0.9;
     top: 0;
     left: 0;
-    background: -webkit-linear-gradient(45deg , rgba(29, 224, 153, 0.8) ,rgba(29, 224, 153, 0.8));
+    background: -webkit-linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 224, 153, 0.8));
 }
-.section__text{
+
+.section__text {
     position: absolute;
     left: 0;
     top: 60px;
@@ -81,7 +110,8 @@ section .container {
     flex-direction: column;
     color: white;
 }
-.section__text h2{
+
+.section__text h2 {
     margin: 30px 0 10px 0;
     padding: 0 15px;
     font-size: 48px;
@@ -89,19 +119,21 @@ section .container {
     line-height: 56px;
     color: #fff;
 }
-.section__text p{
+
+.section__text p {
     color: #fff;
     margin-bottom: 20px;
     padding: 0 15px;
     font-size: 24px;
 }
-.section__text a{
+
+.section__text a {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 8px 28px;
+    padding: 10px 28px;
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px;
@@ -109,7 +141,15 @@ section .container {
     color: #fff;
     text-decoration: none;
 }
-.product-screens{
+
+.section__text a:hover {
+    color: #1dc8cd;
+    background-color: white;
+    transition: 1s;
+
+}
+
+.product-screens {
     position: absolute;
     left: 0;
     right: 0;
@@ -119,58 +159,67 @@ section .container {
     width: 100%;
     height: 50%;
     overflow: hidden;
-    
+
 }
-.product-screens .product-screen-1{
+
+.product-screens .product-screen-1 {
     position: absolute;
     z-index: 30;
     left: calc(50% + 54px);
     bottom: 0;
     top: 30px;
 }
-.product-screens .product-screen-2{
+
+.product-screens .product-screen-2 {
     position: absolute;
     z-index: 20;
     left: calc(50% - 154px);
     bottom: 0;
     top: 90px;
-}.product-screens .product-screen-3{
+}
+
+.product-screens .product-screen-3 {
     position: absolute;
     z-index: 10;
     left: calc(50% - 374px);
     bottom: 0;
     top: 150px;
 }
-.container__header{
+
+.container__header {
     width: 100%;
     margin: 0 auto;
     padding: 40px 0px;
 }
-.section__header{
+
+.section__header {
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.section__header h3{
+
+.section__header h3 {
     font-size: 2rem;
     color: black;
     margin-bottom: 20px;
 }
+
 .section__header span {
-    height: 3px; 
+    height: 3px;
     width: 60px;
     background-color: #1dc8cd;
     margin-bottom: 30px;
 }
-.section__header p{
+
+.section__header p {
     padding-bottom: 20px;
     color: #777;
     font-style: italic;
     font-size: 1rem;
 }
 
-.container-row{
+.container-row {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -178,26 +227,32 @@ section .container {
     /* flex-wrap: wrap; */
     overflow: hidden;
 }
-.container-row .row-img{
+
+.container-row .row-img {
     width: 100%;
     padding: 0 20px;
 }
-.container-row .row-img img{
+
+.container-row .row-img img {
     width: 735px;
     height: 510px;
     padding-right: 24px;
-}.container-row .row-text{
+}
+
+.container-row .row-text {
     color: #666666;
     padding-left: 20px;
 }
-.container-row .row-text h2{
+
+.container-row .row-text h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
     font-size: 2rem;
 }
-.container-row .row-text h3{
+
+.container-row .row-text h3 {
     color: #777;
     font-weight: 300;
     font-size: 18px;
@@ -205,39 +260,47 @@ section .container {
     font-style: italic;
     margin-bottom: 20px;
 }
-.container-row .row-text p{
+
+.container-row .row-text p {
     line-height: 26px;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
     font-size: 1rem;
 }
-.container-row .row-text ul li{
+
+.container-row .row-text ul li {
     padding-bottom: 10px;
     font-size: 1rem;
     list-style: none;
 
 }
-.container-row .row-text ul li i{
+
+.container-row .row-text ul li i {
     color: #1dc8cd;
     background: rgb(240, 238, 244);
     padding-right: 4px;
 }
-.container-row .row-text .text{
+
+.container-row .row-text .text {
     margin-top: 20px;
     line-height: 26px;
 }
+
 /*  */
-.container__Featuress{
+.container__Featuress {
     padding-top: 60px;
 }
-.img-text__featuress{
+
+.img-text__featuress {
     display: grid;
     grid-template-columns: 377px 1fr;
     gap: 20;
 }
-.container__Featuress h3{
+
+.container__Featuress h3 {
     text-align: center;
 }
-.ok{
+
+.ok {
     width: auto;
     height: fit-content;
     display: flex;
@@ -246,60 +309,70 @@ section .container {
     text-align: center;
     justify-content: center;
 }
-.Featuress__title-box{
+
+.Featuress__title-box {
     width: 35%;
     height: auto;
     padding: 12px;
 }
-.Featuress__title i{
+
+.Featuress__title i {
     font-size: 2rem;
     color: #1dc8cd;
 }
-.Featuress__title h4{
+
+.Featuress__title h4 {
     margin: 20px 0px;
 }
-.Featuress__title h4 a{
+
+.Featuress__title h4 a {
     font-size: 1.2rem;
     text-decoration: none;
-   
+
 }
-.Featuress__title p{
+
+.Featuress__title p {
     font-size: 0.9rem;
     line-height: 24px;
 }
-.Featuress__title h3{
+
+.Featuress__title h3 {
     font-size: 2rem;
     text-align: center;
     align-items: center;
     padding: 20px 0px;
     font-weight: 400;
 }
-.Featuress__title h2{
+
+.Featuress__title h2 {
     display: block;
-   width: 60px;
-   height: 3px;
-   background-color: #1dc8cd;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #1dc8cd;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
-.container_pricing{
+
+.container_pricing {
     width: 1196px;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: 1fr 555px; 
+    grid-template-columns: 1fr 555px;
     gap: 30px;
     padding-top: 60px;
     padding-bottom: 30px;
 }
-.container_pricing .Pricing__text h2{
+
+.container_pricing .Pricing__text h2 {
     font-size: 23px;
     font-weight: 700;
     color: #000;
     margin-bottom: 20px;
 }
-.container_pricing .Pricing__text h3{
+
+.container_pricing .Pricing__text h3 {
     font-size: 1.3rem;
     line-height: 24px;
     font-weight: 400;
@@ -307,10 +380,26 @@ section .container {
     color: #999;
     margin-bottom: 20px;
 }
-.container_pricing .Pricing__text p{
+
+.container_pricing .Pricing__text p {
     line-height: 24px;
     color: #777;
     margin-bottom: 30px;
     margin-bottom: 20px;
     font-size: 1rem;
+}
+
+.Pricing__text i {
+    font-size: 2rem;
+    padding-right: 10px;
+    color: #1dc8cd;
+}
+
+.Pricing__text .r {
+    display: flex;
+}
+
+.Pricing__text .v {
+    font-size: 3.3rem;
+    padding-right: 10px;
 }
