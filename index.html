@@ -16,8 +16,26 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
 </head>
+<style>
+#btn-back-to-top {
+     position: fixed;
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    right: 15px;
+    bottom: 0;
+    width: 64px;
+    height: 34px;
+    z-index: 100;
+    border: none;
+}
+</style>
 
 <body>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- header -->
     <header id="home" style="background-color:red ;">
         <div class="container header ">
@@ -477,8 +495,7 @@
                 <li><a href="#home">Terms of Use</a></li>
             </ul>
         </div>
-    </footer>
-</body>
+    </footer></body>
 <script src="app.js"></script>
 <script>
     AOS.init();

@@ -6,7 +6,7 @@
 
 html {
     scroll-padding-top: 50px;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -73,8 +73,8 @@ header .container .menu ul li a {
 
 header .container .menu ul li a:hover {
     color: rgb(255, 255, 255);
-    border-bottom: 1px solid white;
-    transition: all 0.3s;
+    border-bottom: 3px solid white;
+    transition: 0.3s;
 }
 
 section .container {
@@ -897,6 +897,7 @@ form .form-row input{
     margin: 20px 0px;
 }
 form .form-row textarea{
+    min-height: 50px;
     width: 100%;
     padding: 10px;
     resize:vertical;
