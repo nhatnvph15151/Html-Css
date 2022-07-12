@@ -875,8 +875,13 @@ form .form-row1{
     display: flex;
     justify-content: space-between;
 }
-form .form-row1 input{
-    width: 47%;
+form .form-row1 input:nth-child(1){
+    width: 50%;
+    margin-left: -5px;
+}
+form .form-row1 input:nth-child(2) {
+    width: 50%;
+    margin-right: -5px;
 }
 form .form-row input ,.form-row1 input {
     width: 100%;

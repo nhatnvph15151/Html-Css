@@ -119,11 +119,21 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .contact__container .row{
-        flex-direction: column;
+    .contact__container .rowr{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .contact__container .row .row1,.row2,.row3{
+    .contact__container .rowr .row1, .contact__container .rowr .row2 ,.contact__container .rowr .row3{
         width: 100%;
+    }
+    form .form-row1 input:nth-child(1){
+        margin-bottom: 20px;
+        width: 103%;
+        margin-left: -5px;
+    }
+     form .form-row1 input:nth-child(2) {
+        width: 103%;
+        margin-left: -5px;
     }
     .section-description .box{
         width: 80%;
