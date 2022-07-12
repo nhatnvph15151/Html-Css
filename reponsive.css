@@ -1,20 +1,30 @@
 @media (max-width: 840px) {
-   
-  
-   .menu i{
-    display: block;
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-    padding-top:40px;
-    cursor: pointer;
-   }
-    .menu ul{
-    display: none !important;
-   }
-   header .container{
-    padding: 0px 20px;
-   }
+    .container1{
+        width: 100%;
+    }
+    .lable{
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+    }
+    .content_nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+    .nav_checkbox input:checked ~ .content_nav{
+        max-height: 100vh;
+        background-color:#1dc8cd;
+    }
+    .content_nav li {
+        padding: 15px 0px;
+    }
+
     .container-row{
         flex-direction: column;
     }

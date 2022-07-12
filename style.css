@@ -15,61 +15,78 @@ body {
     background-color: #eff5f5;
 }
 
-header {
-    height: auto;
-    z-index: 11;
-    display: flex;
+/* Header */
 
-}
-
-header .logo a {
-    color: #fff;
-    font-size: 3rem;
-    padding-left: 20px;
-    text-decoration: none;
-
-}
-.menu i{
-    display: none;
-}
-header  {
+header{
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
     top: 0;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    align-items: center;
-    z-index: 10;
-    transition: 1s;
+    z-index: 100;
+    width: 100%;
+    /* background: -webkit-linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 224, 153, 0.8)); */
 }
-
-header.stick  {
+.stick{
     background: linear-gradient(45deg, #1de099, #1dc8cd);
-    color: white;
-    transition: all 0.5s;
 }
-
-
-
-
-header .container1 .menu ul li {
-    padding: 0px 20px;
+.container1{
+    width: 1280px;
+    margin: auto;
 }
-
-header .container1 .menu ul li a {
+.nav_checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
     text-decoration: none;
-    color: rgb(249, 238, 238);
+    color: white;
+    padding: 10px ;
 }
+.tab-nav{
+    outline: none;
+    display: none;
 
-header .container1 .menu ul li a:hover {
-    color: rgb(255, 255, 255);
-    border-bottom: 3px solid white;
-    transition: 0.3s;
+}
+.lable{
+    display: none;
+    color: white;
+}
+.burger{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+.content_nav{
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content_nav li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.content_nav li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.content_nav li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform-origin:center;
+    transform: scale(0,1);
+    transition: transform ease-in-out 0.3s;
+}
+.content_nav li a:hover::after{
+    transform: scale(1,1);
 }
 
 section .container2 {
@@ -960,4 +977,10 @@ footer .footer__container ul li{
 footer .footer__container ul li a{
     text-decoration: none;
     color: #777;
+}
+nav > .aaaa{
+    float: right;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
