@@ -16,13 +16,11 @@ body {
 }
 
 header {
-    width: 100%;
     height: auto;
     z-index: 11;
+    display: flex;
 
 }
-
-
 
 header .logo a {
     color: #fff;
@@ -31,8 +29,10 @@ header .logo a {
     text-decoration: none;
 
 }
-
-header .container {
+.menu i{
+    display: none;
+}
+header  {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -48,36 +48,31 @@ header .container {
     transition: 1s;
 }
 
-header.stick .container {
+header.stick  {
     background: linear-gradient(45deg, #1de099, #1dc8cd);
     color: white;
     transition: all 0.5s;
 }
 
 
-header .container .menu ul {
-    padding: 30px 12px;
-    list-style: none;
-    display: flex;
-    font-size: 1rem;
-}
 
-header .container .menu ul li {
+
+header .container1 .menu ul li {
     padding: 0px 20px;
 }
 
-header .container .menu ul li a {
+header .container1 .menu ul li a {
     text-decoration: none;
     color: rgb(249, 238, 238);
 }
 
-header .container .menu ul li a:hover {
+header .container1 .menu ul li a:hover {
     color: rgb(255, 255, 255);
     border-bottom: 3px solid white;
     transition: 0.3s;
 }
 
-section .container {
+section .container2 {
     width: 100%;
     height: 100vh;
     background-image: url("https://bootstrapmade.com/demo/templates/Avilon/assets/img/hero-bg.jpg");
@@ -309,7 +304,12 @@ section .container {
 .container__Featuress h3 {
     text-align: center;
 }
-
+.fig-h3 {
+    display: none;
+}
+.fig-h2{
+    display: none;
+}
 .ok {
     width: auto;
     height: fit-content;
@@ -809,7 +809,7 @@ section .container {
     width: 1196px;
     margin: 0 auto;
 }
-.contact__container .row{
+.contact__container .rowr{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -823,13 +823,13 @@ section .container {
 
     margin: 10px;
 }
-.contact__container .row .row1{
+.contact__container .rowr .row1{
   width: 33.3%;  
 }
-.contact__container .row .row2{
+.contact__container .rowr .row2{
     width: 25%;
 }
-.contact__container .row .row3 {
+.contact__container .rowr .row3 {
     width: 44.6%;
 }
 

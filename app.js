@@ -25,3 +25,8 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// menu bar
+var bar = document.getElementById("bar")
+bar.classList.toggle("bar-1")
+
+
