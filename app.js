@@ -28,13 +28,18 @@ function backToTop() {
 // menu Item
 var navTab = document.getElementById("tab-nav")
 var contentNav = document.getElementById("content_nav")
- var menuItems = document.querySelectorAll('nav ul li a[href*="#"]');
- for(var i = 1 ; i<menuItems.length ; i++){
+var menuItems = document.querySelectorAll('nav ul li a[href*="#"]');
+ for(var i = 0 ; i<menuItems.length ; i++){
     var menuItem = menuItems[i];
 
      menuItem.onclick = function(){
-        contentNav.style.height = "0px"
+        console.log(this)
+        contentNav.style.maxHeight = "0px"
+        navTab.addEventListener("click",function(){
+            contentNav.style.maxHeight= "100vh"
+        })
     }
+     
  }
 
 

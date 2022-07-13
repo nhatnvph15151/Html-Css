@@ -20,7 +20,7 @@
     .nav_checkbox input:checked ~ .content_nav{
         max-height: 100vh;
         background-color:#1dc8cd;
-    }
+    }  
     .content_nav li {
         padding: 15px 0px;
     }
