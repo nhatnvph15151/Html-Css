@@ -34,9 +34,10 @@ var menuItems = document.querySelectorAll('nav ul li a[href*="#"]');
 
      menuItem.onclick = function(){
         console.log(this)
-        contentNav.style.maxHeight = "0px"
+        contentNav.style.maxHeight ="0"
         navTab.addEventListener("click",function(){
-            contentNav.style.maxHeight= "100vh"
+                contentNav.style.maxHeight = "100vh"
+                contentNav.style.background = "#1dc8cd"
         })
     }
      

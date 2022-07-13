@@ -1,6 +1,7 @@
 @media (max-width: 840px) {
     .container1{
         width: 100%;
+        
     }
     .lable{
         display: grid;
@@ -21,8 +22,11 @@
         max-height: 100vh;
         background-color:#1dc8cd;
     }  
+    form .form-row textarea{
+        margin-left: -5px;
+    }
     .content_nav li {
-        padding: 15px 0px;
+        padding: 20px 0px;
     }
     .container-row{
         flex-direction: column;
@@ -33,10 +37,39 @@
     .product-screen-1,.product-screen-3{
         display: none;
     }
+        .product-screens .product-screen-2{
+            height: 100%;
+            top: 0;
+    }
+    .container-row .row-text h2{
+        font-size: 24px;
+    }
     .section__text{
         margin-top: 100px;
     }
-
+    .container-row .row-text{
+        padding: 0;
+    }
+    #about{
+        padding: 0px 12px;
+    }
+    .section__text h2{
+        margin: 30px 0 10px 0;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0;
+        padding: 0;
+    }
+        section .container2{
+            height: 100vh;
+        }
+   
+    .section__text p{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
     .Featuress__title-box{
         width: 100%;
     }
@@ -44,7 +77,7 @@
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        padding: 0 20px;
+        padding: 0 12px;
     }
     .Featuress__img{
         margin: 0 auto;
@@ -61,8 +94,17 @@
         display: flex;
     flex-direction: column;
     }
+    
+    .container-row .row-img{
+        padding: 0;
+    }
+    .container-row .row-text p{
+        font-size: 15px;
+    }
     .container-row .row-img img{
         width: 100%;
+        padding: 0;
+        padding-bottom:20px;
     }
     .call-to-action_container{
         width: 100%;
@@ -87,9 +129,17 @@
     }
     .box-row{
         grid-template-columns: 1fr;
+        gap: 30px;
     }
     .Pricing__container{
         width: auto;
+        padding: 0px 12px;
+    }
+    .box-row .box:nth-child(2){
+        border: #1dc8cd 1px solid;
+    }
+    .box-row .box{
+        border: none;
     }
     .box-row .box ul{
         padding-left: 50px;
@@ -111,6 +161,21 @@
         padding: 20px 0px;
         font-weight: 400;
     }
+    .container_pricing .Pricing__text h3{
+            font-size: 14px;
+     }
+     .container_pricing .Pricing__text p{
+        font-size: 13px;
+     }
+     .Pricing__text i{
+        font-size: 40px;
+     }
+    .container-row .row-text ul li{
+        font-size: 15px;
+    }
+    .container-row .row-text ul li i{
+        font-size: 18px;
+    }
     .fig-h2{
         display: block;
         width: 60px;
@@ -127,6 +192,7 @@
     .box-row2 {
         display: grid;
         grid-template-columns: 1fr;
+        overflow: hidden;
     }
     .contact__container .rowr{
         display: grid;
@@ -144,14 +210,29 @@
         width: 103%;
         margin-left: -5px;
     }
+        .more-features__container .section-header p{
+            font-size: 12px;
+        }
+        .section-description .box .title p{
+            line-height: 20px;
+        }
+        .section-description .box i{
+            padding-bottom: 15px;
+        }
+    #more-features{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+        .section-description .box .title h4{
+            margin-bottom: 15px;
+        }
     .section-description .box{
-        width: 80%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 10px auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-size: 14px;
-        
     }
     .more-features__container{
         width:auto;
@@ -161,26 +242,52 @@
         text-align: center;
         margin: 0 auto;
     }
+    .box-row2 .box2 span{
+        padding: 5px;
+    }
+    .gallery-row{
+        grid-template-columns: 1fr;
+    }
     .box2{
         width: 100%;
         margin: 0 auto;
         text-align: center;
         align-items: center;
+        margin-bottom: 15px;
+        
     }
     .team__container{
         width: auto;
+        padding: 0 12px;
+    }
+    form .form-row input{
+        margin-left: -5px;
     }
     .box-row2 .box2 .box-img{
-        width: 400px;
-        height: 400px;
-        margin: 0 auto;
+        width: 100%;
+        object-fit: cover;
+        height: 260px;
+    
+        overflow: hidden;
+    }
+    
+    form .form-row1 input:nth-child(1) {
+        width: 100%;
+    }
+    form .form-row1 input:nth-child(2) {
+        width: 100%;
+    }
+    .box-row2 .box2 .box-img img{
+        object-fit: cover;
+        height: 100%;
     }
     .contact__container{
         width: auto;
-        margin: 0 50px;
+        margin: 0 12px;
+        
     }
     .team__container .section-header p {
-        width: 440px;
+        width: 100%;
         margin: 0 auto;
     }
     form .form-row1{
@@ -202,5 +309,6 @@
     
         footer .footer__container{
         width: auto;
+        display: none;
     }
 }
