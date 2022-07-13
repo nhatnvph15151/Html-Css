@@ -38,8 +38,10 @@ var menuItems = document.querySelectorAll('nav ul li a[href*="#"]');
         navTab.addEventListener("click",function(){
                 contentNav.style.maxHeight = "100vh"
                 contentNav.style.background = "#1dc8cd"
-        })
+        })     
     }
+
+    
      
  }
 
