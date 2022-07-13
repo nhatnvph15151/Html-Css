@@ -251,7 +251,6 @@ section .container2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    background: rgb(240, 238, 244);
     /* flex-wrap: wrap; */
     overflow: hidden;
     gap: 30px;
