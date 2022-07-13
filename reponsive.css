@@ -1,7 +1,7 @@
 @media (max-width: 840px) {
     .container1{
         width: 100%;
-        
+
     }
     .lable{
         display: grid;
@@ -29,7 +29,7 @@
         padding: 20px 0px;
     }
     .container-row{
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
         .img-text__featuress{
         grid-template-columns: 1fr;
@@ -46,6 +46,7 @@
     }
     .section__text{
         margin-top: 100px;
+        top: 0;
     }
     .container-row .row-text{
         padding: 0;
@@ -57,13 +58,22 @@
         margin: 30px 0 10px 0;
         font-size: 28px;
         line-height: 36px;
-        margin: 0;
         padding: 0;
     }
         section .container2{
             height: 100vh;
         }
-   
+        .contact__container .row .row1, .row2, .row3{
+            margin: 0px;
+        }
+    h2{
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+   }
     .section__text p{
         font-size: 18px;
         line-height: 24px;
@@ -283,7 +293,7 @@
     }
     .contact__container{
         width: auto;
-        margin: 0 12px;
+        padding: 0px 12px;
         
     }
     .team__container .section-header p {

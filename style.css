@@ -33,7 +33,7 @@ header{
     margin: auto;
 }
 .nav_checkbox{
-    margin: 20px 0px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px 0px 10px 0px;
@@ -71,7 +71,7 @@ header{
 }
 .content_nav li{
     display: inline-block;
-    padding-right: 10px;
+   padding: 10px 0px;
    
     
 }
@@ -101,8 +101,8 @@ header{
 
 section .container2 {
     width: 100%;
-    height: 120vh;
-    background-image: url("https://bootstrapmade.com/demo/templates/Avilon/assets/img/hero-bg.jpg");
+    height: 100vh;
+    background: url("https://bootstrapmade.com/demo/templates/Avilon/assets/img/hero-bg.jpg") center; 
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -127,7 +127,7 @@ section .container2 {
 .section__text {
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 90px;
     right: 0;
     display: flex;
     align-items: center;
@@ -248,29 +248,27 @@ section .container2 {
 }
 
 .container-row {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     background: rgb(240, 238, 244);
     /* flex-wrap: wrap; */
     overflow: hidden;
+    gap: 30px;
 }
 
 .container-row .row-img {
     width: 100%;
-    padding: 0 20px 40px 0px;
 }
 
 .container-row .row-img img {
     max-width: 100%;
     height: auto;
-    padding-right: 24px;
 
 }
 
 .container-row .row-text {
     color: #666666;
-    padding-left: 20px;
 }
 
 .container-row .row-text h2 {
@@ -449,8 +447,7 @@ section .container2 {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2));
-    background: url("https://bootstrapmade.com/demo/templates/Avilon/assets/img/call-to-action-bg.jpg");
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url("https://bootstrapmade.com/demo/templates/Avilon/assets/img/call-to-action-bg.jpg") fixed center center;
 }
 
 .call-to-action_container {
@@ -950,7 +947,6 @@ form .form-row textarea:focus{
 }
 
 form button{
-    width: 40%;
     padding: 10px 20px;
     color: #fff;
     background: linear-gradient(45deg, #1de099, #1dc8cd);
