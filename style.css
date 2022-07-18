@@ -168,6 +168,7 @@ section .container2 {
     margin-bottom: 23px;
     padding: 0 15px;
     font-size: 22px;
+    font-weight: 400;
 }
 
 .section__text a {
