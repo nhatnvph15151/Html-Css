@@ -232,7 +232,7 @@ section .container2 {
 .container__header {
     width: 100%;
     margin: 0 auto;
-    padding: 40px 12px;
+    padding: 50px 12px 40px 12px; 
 }
 
 .section__header {
@@ -260,8 +260,9 @@ section .container2 {
     padding-bottom: 20px;
     color: #777;
     font-style: italic;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
+    font-weight: 500;
 }
 
 .container-row {
