@@ -29,20 +29,20 @@ function backToTop() {
 var navTab = document.getElementById("tab-nav")
 var contentNav = document.getElementById("content_nav")
 var menuItems = document.querySelectorAll('nav ul li a[href*="#"]');
- for(var i = 0 ; i<menuItems.length ; i++){
+for (var i = 0; i < menuItems.length; i++) {
     var menuItem = menuItems[i];
 
-     menuItem.onclick = function(){
+    menuItem.onclick = function () {
         console.log(this)
-        contentNav.style.maxHeight ="0"
-        navTab.addEventListener("click",function(){
-                contentNav.style.maxHeight = "100vh"
-                contentNav.style.background = "#1dc8cd"
-        })     
+        contentNav.style.maxHeight = "0"
+        navTab.addEventListener("click", function () {
+            contentNav.style.maxHeight = "100vh"
+            contentNav.style.background = "#1dc8cd"
+        })
     }
 
-    
-     
- }
+
+
+}
 
 
